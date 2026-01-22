@@ -29,7 +29,7 @@ ini_set('display_errors', 1);
     <h1>CERAMAH PROFESIONAL TEKNOLOGI DIGITAL</h1>
 
     <div class="speaker">
-        <img src="VICTOR.jpg" alt="Penceramah">
+        <img src="victor.jpeg" alt="Penceramah">
         <div>
             <p><strong>VICTOR FOO</strong></p>
             <p>Pensyarah Kanan Teknologi Maklumat</p>
