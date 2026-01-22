@@ -31,7 +31,7 @@ ini_set('display_errors', 1);
     <div class="speaker">
         <img src="pensyarah.jpg" alt="Penceramah">
         <div>
-            <p><strong>Dr. Ahmad Firdaus</strong></p>
+            <p><strong>VICTOR FOO</strong></p>
             <p>Pensyarah Kanan Teknologi Maklumat</p>
             <p>Kepakaran: Pembangunan Web & Sistem Maklumat</p>
         </div>
