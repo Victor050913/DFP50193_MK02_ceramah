@@ -1,11 +1,14 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+
 <!DOCTYPE html>
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <title>Ceramah Profesional Berbayar</title>
+    <title>Ceramah Berbayar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- LINK CSS -->
     <link rel="stylesheet" href="style.css">
 
     <script>
@@ -23,40 +26,40 @@
 
 <div class="container">
 
-    <h1>CERAMAH PROFESIONAL: KEJAYAAN DALAM DUNIA DIGITAL</h1>
+    <h1>CERAMAH PROFESIONAL TEKNOLOGI DIGITAL</h1>
 
     <div class="speaker">
         <img src="pensyarah.jpg" alt="Penceramah">
         <div>
-            <h3>Dr. Ahmad Firdaus</h3>
-            <p><strong>Jawatan:</strong> Pensyarah Kanan Teknologi Maklumat</p>
-            <p><strong>Kepakaran:</strong> Sistem Maklumat, Pembangunan Web, Keselamatan Siber</p>
+            <p><strong>Dr. Ahmad Firdaus</strong></p>
+            <p>Pensyarah Kanan Teknologi Maklumat</p>
+            <p>Kepakaran: Pembangunan Web & Sistem Maklumat</p>
         </div>
     </div>
 
-    <div class="info-box">
-        <h2>Sinopsis Ceramah</h2>
+    <div class="info">
+        <h2>Sinopsis</h2>
         <p>
-            Ceramah ini memberi pendedahan menyeluruh tentang strategi kejayaan
-            dalam dunia digital dan persediaan kerjaya profesional.
+            Ceramah ini memberi pendedahan tentang kemahiran digital
+            dan persediaan kerjaya profesional.
         </p>
     </div>
 
-    <div class="info-box">
-        <h2>Maklumat Logistik</h2>
-        <p><strong>Tarikh:</strong> 15 Mei 2026</p>
-        <p><strong>Masa:</strong> 9.00 pagi – 4.00 petang</p>
-        <p><strong>Lokasi:</strong> Dewan Seminar Utama</p>
+    <div class="info">
+        <h2>Logistik</h2>
+        <p>Tarikh: 15 Mei 2026</p>
+        <p>Masa: 9.00 pagi – 4.00 petang</p>
+        <p>Lokasi: Dewan Seminar Utama</p>
     </div>
 
-    <div class="info-box">
+    <div class="info">
         <h2>Yuran</h2>
-        <p><strong>RM 2,500.00</strong> / slot</p>
+        <p>RM 2,500.00 / slot</p>
     </div>
 
-    <div class="info-box">
-        <h2>Hubungi Kami</h2>
-        <p>E-mel: ceramah@kolej.edu.my</p>
+    <div class="info">
+        <h2>Hubungi</h2>
+        <p>Email: ceramah@kolej.edu.my</p>
         <p>Telefon: 012-3456789</p>
     </div>
 
@@ -67,10 +70,10 @@
         <label>Nama Penuh</label>
         <input type="text" name="nama" required>
 
-        <label>Alamat E-mel</label>
+        <label>Email</label>
         <input type="email" name="email" required>
 
-        <label>Nombor Telefon</label>
+        <label>No Telefon</label>
         <input type="text" name="telefon" required>
 
         <label>Kategori Peserta</label>
@@ -91,7 +94,7 @@
         <input type="file" name="resit" required>
 
         <label>
-            <input type="checkbox" name="terma" required>
+            <input type="checkbox" required>
             Saya bersetuju dengan Terma & Syarat
         </label>
 

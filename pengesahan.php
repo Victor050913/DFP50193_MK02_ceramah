@@ -1,34 +1,37 @@
 <?php
-$harga_unit = 2500;
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$harga = 2500;
 $slot = $_POST['slot'];
-$jumlah = $harga_unit * $slot;
+$jumlah = $harga * $slot;
 ?>
 
 <!DOCTYPE html>
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <title>Pengesahan Pendaftaran</title>
+    <title>Pengesahan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="box">
+<div class="confirm-box">
     <h2>Pengesahan Pendaftaran</h2>
 
-    <p><strong>Nama:</strong> <?php echo $_POST['nama']; ?></p>
-    <p><strong>E-mel:</strong> <?php echo $_POST['email']; ?></p>
-    <p><strong>No Telefon:</strong> <?php echo $_POST['telefon']; ?></p>
-    <p><strong>Kategori:</strong> <?php echo $_POST['kategori']; ?></p>
-    <p><strong>Bilangan Slot:</strong> <?php echo $slot; ?></p>
+    <p><strong>Nama:</strong> <?= $_POST['nama']; ?></p>
+    <p><strong>Email:</strong> <?= $_POST['email']; ?></p>
+    <p><strong>No Telefon:</strong> <?= $_POST['telefon']; ?></p>
+    <p><strong>Kategori:</strong> <?= $_POST['kategori']; ?></p>
+    <p><strong>Bilangan Slot:</strong> <?= $slot; ?></p>
 
     <hr>
 
     <p><strong>Harga Seunit:</strong> RM 2,500.00</p>
-    <p><strong>Jumlah Yuran:</strong> RM <?php echo number_format($jumlah, 2); ?></p>
+    <p><strong>Jumlah Yuran:</strong> RM <?= number_format($jumlah, 2); ?></p>
 
-    <p style="color:green;"><strong>Pendaftaran berjaya.</strong></p>
+    <p style="color:green;"><strong>Pendaftaran berjaya!</strong></p>
 </div>
 
 </body>
