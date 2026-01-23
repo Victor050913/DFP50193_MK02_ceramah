@@ -28,7 +28,7 @@ $jumlah = $harga * $slot;
 
     <hr>
 
-    <p><strong>YURAN (1 Peserta):</strong> RM 2,500.00</p>
+    <p><strong>Harga Seunit:</strong> RM 2,500.00</p>
     <p><strong>Jumlah Yuran:</strong> RM <?= number_format($jumlah, 2); ?></p>
 
     <p style="color:green;"><strong>Pendaftaran berjaya!</strong></p>

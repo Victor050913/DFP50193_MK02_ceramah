@@ -9,17 +9,12 @@ ini_set('display_errors', 1);
     <meta charset="UTF-8">
     <title>Ceramah Berbayar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <script>
-        function kiraJumlah() {
-            let harga = 2500;
-            let slot = document.getElementById("slot").value;
-            let jumlah = harga * slot;
-            document.getElementById("jumlah").innerHTML =
-                "Jumlah Yuran: RM " + jumlah.toFixed(2);
-        }
-    </script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -29,11 +24,11 @@ ini_set('display_errors', 1);
     <h1>CERAMAH PROFESIONAL TEKNOLOGI DIGITAL</h1>
 
     <div class="speaker">
-        <img src="victorr.jpeg" alt="Penceramah">
+        <img src="pensyarah.jpg" alt="Penceramah">
         <div>
-            <p><strong>VICTOR FOO</strong></p>
+            <p><strong>Dr. Ahmad Firdaus</strong></p>
             <p>Pensyarah Kanan Teknologi Maklumat</p>
-            <p>Kepakaran: Pembangunan Web & Sistem Maklumat</p>
+            <p>Kepakaran: Pembangunan Web</p>
         </div>
     </div>
 
@@ -55,12 +50,6 @@ ini_set('display_errors', 1);
     <div class="info">
         <h2>Yuran</h2>
         <p>RM 2,500.00 / slot</p>
-    </div>
-
-    <div class="info">
-        <h2>Hubungi</h2>
-        <p>Email: ceramah@kolej.edu.my</p>
-        <p>Telefon: 012-3456789</p>
     </div>
 
     <h2>Borang Pendaftaran</h2>
@@ -86,9 +75,16 @@ ini_set('display_errors', 1);
         </select>
 
         <label>Bilangan Slot</label>
-        <input type="number" name="slot" id="slot" min="1" required oninput="kiraJumlah()">
+        <input type="number"
+               name="slot"
+               id="slot"
+               min="1"
+               required
+               oninput="kiraJumlah()">
 
-        <div id="jumlah" class="total">Jumlah Yuran: RM 0.00</div>
+        <div id="jumlah" class="total">
+            Jumlah Yuran: RM 0.00
+        </div>
 
         <label>Bukti Pembayaran</label>
         <input type="file" name="resit" required>
