@@ -24,10 +24,10 @@ ini_set('display_errors', 1);
     <h1>CERAMAH PROFESIONAL TEKNOLOGI DIGITAL</h1>
 
     <div class="speaker">
-        <img src="pensyarah.jpg" alt="Penceramah">
+        <img src="sabri.jpeg" alt="Penceramah">
         <div>
-            <p><strong>Dr. Ahmad Firdaus</strong></p>
-            <p>Pensyarah Kanan Teknologi Maklumat</p>
+            <p><strong>SABRI BIN SAEP</strong></p>
+            <p>Pensyarah Teknologi Maklumat</p>
             <p>Kepakaran: Pembangunan Web</p>
         </div>
     </div>
@@ -42,7 +42,7 @@ ini_set('display_errors', 1);
 
     <div class="info">
         <h2>Logistik</h2>
-        <p>Tarikh: 15 Mei 2026</p>
+        <p>Tarikh: 15 Jan 2030</p>
         <p>Masa: 9.00 pagi – 4.00 petang</p>
         <p>Lokasi: Dewan Seminar Utama</p>
     </div>
