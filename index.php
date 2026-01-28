@@ -10,10 +10,7 @@ ini_set('display_errors', 1);
     <title>Ceramah Berbayar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- JAVASCRIPT -->
     <script src="script.js" defer></script>
 </head>
 
@@ -28,28 +25,35 @@ ini_set('display_errors', 1);
         <div>
             <p><strong>SABRI BIN SAEP</strong></p>
             <p>Pensyarah Teknologi Maklumat</p>
-            <p>Kepakaran: Pembangunan Web</p>
+            <p>Kepakaran: Pembangunan Web & Sistem Maklumat</p>
         </div>
     </div>
 
     <div class="info">
         <h2>Sinopsis</h2>
         <p>
-            Ceramah ini memberi pendedahan tentang kemahiran digital
+            Ceramah ini bertujuan memberi pendedahan kepada peserta
+            mengenai teknologi digital semasa, kemahiran industri,
             dan persediaan kerjaya profesional.
         </p>
     </div>
 
     <div class="info">
-        <h2>Logistik</h2>
-        <p>Tarikh: 15 Jan 2030</p>
-        <p>Masa: 9.00 pagi – 4.00 petang</p>
-        <p>Lokasi: Dewan Seminar Utama</p>
+        <h2>Maklumat Logistik</h2>
+        <p><strong>Tarikh:</strong> 15 Mei 2026</p>
+        <p><strong>Masa:</strong> 9.00 pagi – 4.00 petang</p>
+        <p><strong>Lokasi:</strong> Dewan Seminar Utama</p>
     </div>
 
     <div class="info">
         <h2>Yuran</h2>
-        <p>RM 2,500.00 / slot</p>
+        <p><strong>RM 2,500.00</strong> bagi setiap slot</p>
+    </div>
+
+    <div class="info">
+        <h2>Hubungi</h2>
+        <p>Email: ceramah@kolej.edu.my</p>
+        <p>Telefon: 012-3456789</p>
     </div>
 
     <h2>Borang Pendaftaran</h2>
@@ -75,16 +79,9 @@ ini_set('display_errors', 1);
         </select>
 
         <label>Bilangan Slot</label>
-        <input type="number"
-               name="slot"
-               id="slot"
-               min="1"
-               required
-               oninput="kiraJumlah()">
+        <input type="number" name="slot" id="slot" min="1" required oninput="kiraJumlah()">
 
-        <div id="jumlah" class="total">
-            Jumlah Yuran: RM 0.00
-        </div>
+        <div id="jumlah" class="total">Jumlah Yuran: RM 0.00</div>
 
         <label>Bukti Pembayaran</label>
         <input type="file" name="resit" required>
@@ -94,7 +91,7 @@ ini_set('display_errors', 1);
             Saya bersetuju dengan Terma & Syarat
         </label>
 
-        <button type="submit">Hantar</button>
+        <button type="submit">Hantar Pendaftaran</button>
     </form>
 
 </div>

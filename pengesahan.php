@@ -2,36 +2,56 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$harga = 2500;
+$harga_unit = 2500;
 $slot = $_POST['slot'];
-$jumlah = $harga * $slot;
+$jumlah = $harga_unit * $slot;
 ?>
 
 <!DOCTYPE html>
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <title>Pengesahan</title>
+    <title>Pengesahan Pendaftaran</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="confirm-box">
-    <h2>Pengesahan Pendaftaran</h2>
 
-    <p><strong>Nama:</strong> <?= $_POST['nama']; ?></p>
-    <p><strong>Email:</strong> <?= $_POST['email']; ?></p>
-    <p><strong>No Telefon:</strong> <?= $_POST['telefon']; ?></p>
-    <p><strong>Kategori:</strong> <?= $_POST['kategori']; ?></p>
-    <p><strong>Bilangan Slot:</strong> <?= $slot; ?></p>
+    <h2>Pengesahan Pendaftaran Ceramah</h2>
 
-    <hr>
+    <h3>Maklumat Ceramah</h3>
+    <table>
+        <tr><td><strong>Tajuk</strong></td><td>Ceramah Profesional Teknologi Digital</td></tr>
+        <tr><td><strong>Penceramah</strong></td><td>SABRI BIN SAEP</td></tr>
+        <tr><td><strong>Tarikh</strong></td><td>15 Mei 2026</td></tr>
+        <tr><td><strong>Masa</strong></td><td>9.00 pagi – 4.00 petang</td></tr>
+        <tr><td><strong>Lokasi</strong></td><td>Dewan Seminar Utama</td></tr>
+    </table>
 
-    <p><strong>Harga satu slot:</strong> RM 2,500.00</p>
-    <p><strong>Jumlah Yuran:</strong> RM <?= number_format($jumlah, 2); ?></p>
+    <h3>Maklumat Peserta</h3>
+    <table>
+        <tr><td><strong>Nama</strong></td><td><?= $_POST['nama']; ?></td></tr>
+        <tr><td><strong>Email</strong></td><td><?= $_POST['email']; ?></td></tr>
+        <tr><td><strong>No Telefon</strong></td><td><?= $_POST['telefon']; ?></td></tr>
+        <tr><td><strong>Kategori</strong></td><td><?= $_POST['kategori']; ?></td></tr>
+    </table>
 
-    <p style="color:green;"><strong>Pendaftaran berjaya!</strong></p>
+    <h3>Maklumat Bayaran</h3>
+    <table>
+        <tr><td><strong>Harga Seunit</strong></td><td>RM 2,500.00</td></tr>
+        <tr><td><strong>Bilangan Slot</strong></td><td><?= $slot; ?></td></tr>
+        <tr><td><strong>Jumlah Yuran</strong></td>
+            <td><strong>RM <?= number_format($jumlah, 2); ?></strong></td></tr>
+    </table>
+
+    <div class="success">
+        <strong>Pendaftaran berjaya!</strong><br>
+        Sila simpan maklumat ini sebagai rujukan. Pihak penganjur akan
+        menghubungi anda melalui e-mel.
+    </div>
+
 </div>
 
 </body>

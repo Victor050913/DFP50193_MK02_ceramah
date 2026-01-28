@@ -1,43 +1,51 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f2f2f2;
+    background: #f2f4f6;
     margin: 0;
 }
 
-.container {
+.container, .confirm-box {
     max-width: 900px;
-    margin: 30px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1, h2 {
     color: #2c3e50;
 }
 
+h3 {
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
 .speaker {
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .speaker img {
-    width: 140px;
+    width: 150px;
     border-radius: 10px;
 }
 
 .info {
     background: #ecf0f1;
     padding: 15px;
-    margin: 15px 0;
     border-radius: 6px;
+    margin-bottom: 15px;
 }
 
 label {
-    font-weight: bold;
     display: block;
     margin-top: 12px;
+    font-weight: bold;
 }
 
 input, select {
@@ -47,13 +55,18 @@ input, select {
 }
 
 button {
-    margin-top: 15px;
-    padding: 10px;
-    background: green;
+    margin-top: 20px;
+    padding: 12px;
+    background: #27ae60;
     color: white;
     border: none;
     width: 100%;
+    font-size: 16px;
     cursor: pointer;
+}
+
+button:hover {
+    background: #219150;
 }
 
 .total {
@@ -62,10 +75,19 @@ button {
     color: green;
 }
 
-.confirm-box {
-    max-width: 600px;
-    margin: 60px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.success {
+    background: #eafaf1;
+    padding: 15px;
+    border-left: 5px solid #27ae60;
+    margin-top: 20px;
 }

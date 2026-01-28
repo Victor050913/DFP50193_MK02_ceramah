@@ -2,7 +2,7 @@ function kiraJumlah() {
     let harga = 2500;
     let slot = document.getElementById("slot").value;
 
-    if (slot === "" || slot <= 0) {
+    if (slot <= 0 || slot === "") {
         document.getElementById("jumlah").innerHTML =
             "Jumlah Yuran: RM 0.00";
         return;
